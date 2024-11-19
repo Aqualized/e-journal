@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Таблица Преподавателя</title>
+    <title>Гамбургер-меню</title>
     <link rel="stylesheet" href="css/style_viewing-students.css">
 </head>
 
@@ -36,23 +36,38 @@
                 <!-- Дополнительные строки -->
             </tbody>
         </table>
+
+        <!-- Гамбургер-кнопка -->
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Выдвигающееся меню -->
         <div class="analysis-tools">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <p>Инструменты для анализа</p>
             <div class="icon pie-chart" data-tool="pie">Круг</div>
             <div class="icon bar-chart" data-tool="bar">Столб</div>
             <div class="icon smiley" data-tool="feedback">☺</div>
         </div>
-        <div class="popup hidden">
-            <p>Яна Цист – дата галочки:</p>
-            <p>Посещение: <span>присутствовал / отсутствовал</span></p>
-            <p>Описание / Причина отсутствия:</p>
-            <textarea></textarea>
-            <p>Приложенные документы:</p>
-            <div class="attachment"></div>
+        <div class="popup" style="display: none;">
+            <p><strong>Дата галочки:</strong> <span id="date"></span></p>
+            <p><strong>Посещение:</strong> <input type="radio" name="attendance" value="present"> Присутствовал
+                <input type="radio" name="attendance" value="absent"> Отсутствовал
+            </p>
+            <p><strong>Причина отсутствия:</strong></p>
+            <textarea placeholder="Введите причину..."></textarea>
+            <button>Сохранить</button>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script_viewing-students.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script_viewing-students.js"></script>
 </body>
 
 </html>
