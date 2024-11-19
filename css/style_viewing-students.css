@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+}
+
+.header {
+    background-color: #ccc;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.status {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.status.red {
+    background-color: red;
+}
+
+.status.yellow {
+    background-color: yellow;
+}
+
+.status.green {
+    background-color: green;
+}
+
+.analysis-tools {
+    margin-top: 20px;
+}
+
+.analysis-tools p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    background-color: #eee;
+    border: 1px solid #000;
+}
+
+.popup {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    background: #ffe5e5;
+    border: 1px solid #000;
+    padding: 10px;
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+}

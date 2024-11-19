@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица Преподавателя</title>
+    <link rel="stylesheet" href="css/style_viewing-students.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Табл препода – Выбрана группа Список Скрыт
+        </div>
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Предмет, Группа</th>
+                    <th>14.88</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Влад Гойдин</td>
+                    <td class="status red"></td>
+                    <td class="status red"></td>
+                    <td class="status red"></td>
+                    <td class="status yellow"></td>
+                    <td class="status green"></td>
+                </tr>
+                <!-- Дополнительные строки -->
+            </tbody>
+        </table>
+        <div class="analysis-tools">
+            <p>Инструменты для анализа</p>
+            <div class="icon pie-chart"></div>
+            <div class="icon bar-chart"></div>
+            <div class="icon smiley"></div>
+        </div>
+        <div class="popup hidden">
+            <p>Яна Цист – дата галочки:</p>
+            <p>Посещение: <span>присутствовал / отсутствовал</span></p>
+            <p>Описание / Причина отсутствия:</p>
+            <textarea></textarea>
+            <p>Приложенные документы:</p>
+            <div class="attachment"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script_viewing-students.js"></script>
+</body>
+</html>
