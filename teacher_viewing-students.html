@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблица Преподавателя</title>
     <link rel="stylesheet" href="css/style_viewing-students.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -36,9 +38,9 @@
         </table>
         <div class="analysis-tools">
             <p>Инструменты для анализа</p>
-            <div class="icon pie-chart"></div>
-            <div class="icon bar-chart"></div>
-            <div class="icon smiley"></div>
+            <div class="icon pie-chart" data-tool="pie">Круг</div>
+            <div class="icon bar-chart" data-tool="bar">Столб</div>
+            <div class="icon smiley" data-tool="feedback">☺</div>
         </div>
         <div class="popup hidden">
             <p>Яна Цист – дата галочки:</p>
@@ -52,4 +54,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script_viewing-students.js"></script>
 </body>
+
 </html>

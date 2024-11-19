@@ -7,7 +7,14 @@ body {
 .container {
     margin: 20px;
 }
-
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon:hover {
+    background-color: #ddd;
+}
 .header {
     background-color: #ccc;
     padding: 10px;
