@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список групп</title>
+  <link rel="stylesheet" href="css/style_group_list.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script_group_list.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Кнопка меню -->
+    <button class="menu-toggle">&#9776;</button>
+    
+    <!-- Основной контент -->
+    <div class="content">
+      <h1>Список групп <span>(Предмет: Математика)</span></h1>
+      <input type="text" placeholder="Введите название" class="search-input">
+      
+      <div class="groups">
+        <!-- Группы -->
+        <div class="group">
+          <p class="group-code">522-887-45</p>
+          <p>Количество студентов: 20</p>
+          <p>Староста: x.x.xxxxxx<br>+79121233212</p>
+        </div>
+        <div class="group">
+          <p class="group-code">522-821-22</p>
+          <p>Количество студентов: 23</p>
+          <p>Староста: x.x.xxxxxx<br>+79121233212</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Боковое меню -->
+    <div class="sidebar">
+      <button class="analytics-button">Инструменты аналитики предмета</button>
+      <button class="analytics-button">Вывести процент посещаемости по всем группам</button>
+    </div>
+  </div>
+</body>
+</html>

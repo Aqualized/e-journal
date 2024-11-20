@@ -1,0 +1,81 @@
+/* Основные стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  h1 {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    padding: 10px 20px;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  
+  /* Основной контент */
+  .login-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    flex: 1;
+  }
+  
+  /* Секция с кругами */
+  .circles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .circle {
+    background-color: #dcdcdc;
+    border-radius: 50%;
+  }
+  
+  .circle.large {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .circle.medium {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .circle.small {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Секция с формой */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .login-input {
+    width: 300px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    color: #333;
+  }
+  
+  .login-input::placeholder {
+    color: #555;
+  }
+  
