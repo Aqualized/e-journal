@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analysis Dashboard</title>
+  <title>Выбор группы</title>
   <link rel="stylesheet" href="css/style_group_choosing.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/script_group_choosing.js" defer></script>
+  <script src="js/script_group_choosing.js"></script>
 </head>
 <body>
-  <div class="container menu-open">
+  <div class="container menu-closed">
     <header>
       <button class="menu-toggle">☰</button>
     </header>
 
-    <aside class="sidebar">
-      <h3>Список прикрывается</h3>
+    <aside class="sidebar hidden">
+      <ul>Список:</ul>
     </aside>
 
     <main>
@@ -24,9 +24,15 @@
       </div>
       <div class="analysis-tools">
         <h3>Инструменты для анализа</h3>
-        <div class="tool-icon">⭕</div>
-        <div class="tool-icon">📊</div>
-        <div class="tool-icon">❌</div>
+        <div class="tool-icon">
+          <button>⭕</button>
+        </div>
+        <div class="tool-icon">
+          <button>📊</button>
+        </div>
+        <div class="tool-icon">
+          <button>❌</button>
+        </div>
       </div>
     </main>
   </div>
