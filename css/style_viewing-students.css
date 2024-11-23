@@ -24,7 +24,7 @@ ul{
 
 .header-bar {
     background-color: #3089d8; /* Цвет фона плашки */
-    color: rgba(255, 255, 255, 0.651); /* Цвет текста */
+    color: rgba(255, 255, 255); /* Цвет текста */
     padding: 10px 10px;
     text-align: center;
     font-size: 14px;
@@ -82,7 +82,7 @@ h1 {
 
 /* Выдвигающееся меню */
 .analysis-tools {
-    background: #066ac281;
+    background: #3089d8;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,8 @@ h1 {
 }
 
 .sidebar {
-    background: #61a4df;
+    box-shadow: -2px 2px 20px rgba(0, 0, 0, 1.5);
+    background: #3089d8;
     color: #000000;
     padding: 10px;
     width: 250px;
@@ -105,9 +106,10 @@ h1 {
 }
 
 .menu-toggle {
+    color: #fff;
     position: absolute;
-    top: 20px;
-    left: 10px; /* Позиция кнопки для выдвижения */
+    top: 15px;
+    left: 20px; /* Позиция кнопки для выдвижения */
     background: none;
     border: none;
     font-size: 24px;
@@ -119,11 +121,11 @@ h1 {
 
 /* Кнопка меню для выдвижения */
 .container.menu-closed .menu-toggle {
-    left: 10px; /* Кнопка меню сдвигается к левому краю */
+    left: 0px; /* Кнопка меню сдвигается к левому краю */
 }
 
 .container:not(.menu-closed) .menu-toggle {
-    left: 280px; /* Кнопка меню сдвигается после открытия меню */
+    left: 270px; /* Кнопка меню сдвигается после открытия меню */
 }
 
 /* Скрытие меню */
@@ -206,8 +208,8 @@ h1 {
 
 .menu-toggle {
     position: absolute;
-    top: 20px;
-    margin-left: 30px;
+    top: 15px;
+    margin-left: 20px;
     background: none;
     border: none;
     font-size: 24px;

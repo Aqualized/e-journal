@@ -26,18 +26,26 @@ body, html {
 
 header {
   grid-column: 1 / -1;
-  background: #f4f4f4;
+  background: #066bc281;
   padding: 10px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #333;
+  flex-grow: 1;  /* Чтобы текст занимал доступное пространство */
+  text-align: center;
 }
 
 .menu-toggle {
   position: absolute;
   top: 50px;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
   background: none;
   border: none;
   font-size: 24px;
