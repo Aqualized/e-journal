@@ -16,7 +16,7 @@ body {
     transition: grid-template-columns 0.3s ease-in-out;
 }
 
-ul{
+p{
     color:#fff;
     font-weight: bold;
     text-shadow:0 0 18px rgba(0, 0, 0, 1.5);

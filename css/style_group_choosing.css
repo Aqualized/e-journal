@@ -20,8 +20,71 @@ body, html {
   transition: grid-template-columns 0.3s ease-in-out;
 }
 
+.sidebar {
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
 .container.menu-closed {
   grid-template-columns: 0 1fr;
+}
+
+.subjects-list {
+  width: 220px;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subject-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.subject-item h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.group-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  display: none;
+  transition: max-height 0.3s ease-out;
+}
+
+.group-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.group-item:hover {
+  background-color: #e9e9e9;
+  transform: scale(1.05);
+}
+
+.group-item h3 {
+  margin: 0;
+  font-size: 1em;
+  color: #007bff;
 }
 
 header {
@@ -32,6 +95,10 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
+}
+
+p{
+  font-weight: bold;
 }
 
 .header-title {
@@ -53,10 +120,9 @@ header {
   transition: left 0.3s ease-in-out;
 }
 
-.sidebar {
+.sidebar1 {
   background: #066bc281;
   color: #000000;
-  padding: 15px;
   overflow-y: auto;
   height: 100%;
   transition: transform 0.3s ease-in-out;
@@ -73,18 +139,17 @@ header {
 }
 
 .sidebar ul, .sidebar a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   display: block;
   transition: color 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar1 a:hover {
   color: #f1f1f1;
 }
 
-.sidebar.hidden {
+.sidebar1.hidden {
   transform: translateX(-100%);
 }
 

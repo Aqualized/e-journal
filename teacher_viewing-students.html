@@ -7,7 +7,60 @@
     <title>Таблица посещаемости</title>
     <link rel="stylesheet" href="css/style_viewing-students.css">
     <style>
-        /* Ваши стили */
+        .subjects-list {
+            width: 220px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .subject-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subject-item:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .subject-item h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .group-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+            display: none;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .group-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 5px 0;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .group-item:hover {
+            background-color: #e9e9e9;
+            transform: scale(1.05);
+        }
+
+        .group-item h3 {
+            margin: 0;
+            font-size: 1em;
+            color: #007bff;
+        }
     </style>
 </head>
 
@@ -21,7 +74,9 @@
             <button class="menu-toggle">☰</button>
         </header>
         <aside class="sidebar hidden">
-            <ul>Список:</ul>
+            <p>Список:</p>
+                <ul id="subjects-list" class="subjects-list">
+                </ul>
         </aside>
 
         <!-- Инструменты для анализа -->
@@ -54,7 +109,7 @@
             </table>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script_viewing-students.js"></script>
 </body>
