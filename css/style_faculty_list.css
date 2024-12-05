@@ -1,11 +1,52 @@
-   .groups {
+   .faculties {
      display: flex;
      flex-wrap: wrap;
      gap: 20px;
    }
 
+   .split-container {
+     display: flex;
+     width: 100%;
+   }
+
+   .split {
+     flex: 1;
+     padding: 20px;
+   }
+
+   .split:not(:last-child) {
+     border-right: 2px solid #ccc;
+   }
+
    .search-input {
-     width: 10%;
+     margin-bottom: 20px;
+     padding: 10px;
+     width: 80%;
+     box-sizing: border-box;
+   }
+
+   .faculties,
+   .teachers {
+     margin-top: 20px;
+   }
+
+   .teachers {
+     font-size: 14px;
+   }
+
+   .teacher {
+     background: #f9f9f9;
+     border: 1px solid #ddd;
+     padding: 15px;
+     border-radius: 5px;
+     width: calc(50% - 10px);
+     text-align: center;
+     margin-bottom: 15px;
+     font-size: 16px;
+   }
+
+   .teacher .search-input {
+     width: 85%;
      padding: 10px;
      margin: 20px 0;
      border: 1px solid #ccc;
@@ -29,7 +70,7 @@
    }
 
 
-   .group {
+   .faculty {
      background: #f9f9f9;
      border: 1px solid #ddd;
      padding: 15px;
@@ -37,7 +78,7 @@
      width: calc(50% - 10px);
    }
 
-   .group-code {
+   .faculty-code {
      font-weight: bold;
      font-size: 18px;
    }
@@ -197,6 +238,7 @@
      background-color: #f4f4f4;
      margin: 0;
      padding: 0;
+     display: flex;
    }
 
    .sidebar {
@@ -233,7 +275,7 @@
      font-size: 1.2em;
    }
 
-   .group-list {
+   .faculty-list {
      list-style-type: disc;
      padding-left: 20px;
      margin: 0;
@@ -241,7 +283,7 @@
      transition: max-height 0.3s ease-out;
    }
 
-   .group-item {
+   .faculty-item {
      background-color: #f9f9f9;
      border: 1px solid #ddd;
      border-radius: 5px;
@@ -251,13 +293,12 @@
      transition: background-color 0.3s, transform 0.3s;
    }
 
-   .group-item:hover {
+   .faculty-item:hover {
      background-color: #e9e9e9;
      transform: scale(1.05);
    }
 
-   
-   .group-item h3 {
+   .faculty-item h3 {
      margin: 0;
      font-size: 1em;
      color: #3089d8;

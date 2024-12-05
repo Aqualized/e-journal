@@ -5,12 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблица посещаемости</title>
-    <link rel="stylesheet" href="css/style_viewing-students.css">
+    <link rel="stylesheet" href="css/style_viewing-students_selecting-group.css">
     <style>
         .subjects-list {
-            width: 220px;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 300px;
             margin: 0;
+            list-style: none;
+        }
+
+        .subject-button {
+            background-color: #0400ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .subject-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
 
         .subject-item {
@@ -75,7 +98,7 @@
         <p>/</p>
         <a href="cathedra_list.html" class="cathedras-name">Кафедры</a>
         <p>/</p>
-        <a href="teacher_group_list.html" class="teachers-name">Преподаватели</a>
+        <a href="teacher_group_list.html" class="groups-name">Группы</a>
     </div>
     <div class="container menu-closed">
         <!-- Выдвигающееся меню -->
@@ -105,6 +128,10 @@
         <!-- Таблица посещаемости -->
         <div class="table-container">
             <h1>Таблица посещаемости</h1>
+            <div class="helping-info">
+                <h2>Выберите предмет в левом выдвигающемся списке, чтобы посмотреть данные</h2>
+                <img class="image-helping-info" src="images/kolobkihd_001.png">
+            </div>
             <table id="attendanceTable">
                 <thead>
                     <tr>
@@ -120,12 +147,12 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script_viewing-students.js"></script>
+    <script src="js/script_viewing-students_selecting-group.js"></script>
     <script>
         // Чтение значения из localStorage
         const facultyName = localStorage.getItem('selectedFaculty');
         const cathedraName = localStorage.getItem('selectedCathedra');
-        const teacherName = localStorage.getItem('selectedTeacher');
+        const groupName = localStorage.getItem('selectedGroup');
 
         // Обновление текста в header
         if (facultyName) {
@@ -136,10 +163,13 @@
             const headerTitle = document.querySelector('.cathedras-name');
             headerTitle.textContent = cathedraName;
         }
-        if (teacherName) {
-            const headerTitle = document.querySelector('.teachers-name');
-            headerTitle.textContent = teacherName;
+        if (groupName) {
+            const headerTitle = document.querySelector('.groups-name');
+            headerTitle.textContent = groupName;
         }
+        subjectButton.addEventListener('click', () => {
+            table.classList.add('visible');
+        });
     </script>
 </body>
 

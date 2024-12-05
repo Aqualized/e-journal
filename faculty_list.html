@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список факультетов</title>
+  <link rel="stylesheet" href="css/style_faculty_list.css">
+</head>
+<style>
+  .header-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  header {
+    grid-column: 1 / -1;
+    background: #2166a1;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 53000%;
+    justify-content: center;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+</style>
+
+<body>
+  <div>
+    <header>
+      <div class="header-title">
+        <p>.</p>
+      </div>
+    </header>
+  </div>
+
+  <!-- Основной контент -->
+  <div id="main-content" class="container">
+    <div class="content">
+      <h1>Список факультетов</h1>
+      <input type="text" placeholder="Введите название" class="search-input">
+      <div class="faculties">
+        <div class="faculty">
+          <p class="faculty-code">Факультет "Информационные технологии"</p>
+          <a href="cathedra_list.html" onclick="saveFaculty('Факультет \'ИТ\'')" class="btn btn-primary">Выбрать</a>
+        </div>
+        <div class="faculty">
+          <p class="faculty-code">Факультет "Математика и естественные науки"</p>
+          <a href="cathedra_list.html" onclick="saveFaculty('Факультет \'МиЕН\'')" class="btn btn-primary">Выбрать</a>
+        </div>
+        <div class="faculty">
+          <p class="faculty-code">Институт непрерывного профессионального образования</p>
+          <a href="cathedra_list.html" onclick="saveFaculty('ИНПО')" class="btn btn-primary">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function saveFaculty(facultyName) {
+      localStorage.setItem('selectedFaculty', facultyName);
+    }
+  </script>
+
+  <!-- Правый статичный сайдбар -->
+  <div class="sidebar-right">
+    <button>Инструменты аналитики</button>
+    <button>Вывести процент посещаемости по всем группам</button>
+  </div>
+  <script src="js/script_group_list.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</body>
+
+</html>

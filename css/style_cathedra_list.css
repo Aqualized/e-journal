@@ -1,0 +1,245 @@
+.cathedras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .split-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .split {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .split:not(:last-child) {
+    border-right: 2px solid #ccc;
+  }
+
+  .search-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .cathedras,
+  .teachers {
+    margin-top: 20px;
+  }
+
+  .teachers {
+    font-size: 14px;
+  }
+
+  .teacher {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .teacher .search-input {
+    width: 85%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .teacher>p:first-child {
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 0px;
+    margin-left: 15px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: left 0.3s ease-in-out;
+  }
+
+
+  .cathedra {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: auto;
+  }
+
+  .cathedra-code {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+  }
+
+  .content {
+    padding: 40px;
+    margin-left: -300px;
+  }
+  /* Правый статичный сайдбар */
+  .sidebar-right {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .sidebar-right button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #3089d8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .sidebar-right button:hover {
+    background-color: #0056b3;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .sidebar a,
+  h3 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  .main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 20px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .subjects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .subject-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .subject-item:hover {
+    background-color: #3089d8;
+    color: #fff;
+  }
+
+  .subject-item h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  .cathedra-list {
+    list-style-type: disc;
+    padding-left: 0px;
+    margin: 0;
+    display: none;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .cathedra-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .cathedra-item:hover {
+    background-color: #e9e9e9;
+    transform: scale(1.05);
+  }
+
+  .cathedra-item h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #3089d8;
+  }
